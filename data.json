@@ -1,0 +1,14 @@
+[
+    {
+        "header": "Constant Speed formula",
+        "formula": "\\(d = vt\\)",
+        "body": "Where \\(d\\) is distance, \\(v\\) is velocity and \\(t\\) is time"
+    },
+
+    {
+        "header": "Pythagorean theorem",
+        "formula": "\\[a^2 + b^2 = c^2\\]",
+        "body": "Where \\(c\\) is the hypotenuse."
+    }
+    
+]
