@@ -1,42 +1,42 @@
 [
     {
-        "header": "Constant Speed formula",
+        "title": "Constant Speed formula",
         "formula": "\\(d = vt\\)",
         "body": "Where \\(d\\) is distance, \\(v\\) is velocity and \\(t\\) is time"
     },
 
     {
-        "header": "Pythagorean theorem",
+        "title": "Pythagorean theorem",
         "formula": "\\[a^2 + b^2 = c^2\\]",
         "body": "Where \\(c\\) is the hypotenuse."
     },
 
     {
-        "header": "Constant acceleration (velocity)",
+        "title": "Constant acceleration (velocity)",
         "formula": "\\[v = v_0 + at\\]",
         "body": "Where \\(v\\) is the final speed, \\(v_0\\) is the initial speed."
     },
 
     {
-        "header": "Constant acceleration (displacement)",
+        "title": "Constant acceleration (displacement)",
         "formula": "\\[s = v_0 t + \\frac{at^2}{2}\\]",
         "body": "Where \\(v_0\\) is the initial speed."
     },
 
     {
-        "header": "Newton's second law",
+        "title": "Newton's second law",
         "formula": "\\[F = ma\\]",
         "body": "Where \\(F\\) is force."
     },
 
     {
-        "header": "Force of Friction",
+        "title": "Force of Friction",
         "formula": "\\[F_f = \\mu \\cdot F_n\\]",
         "body": "Where \\(\\mu\\) is the friction coefficient, \\(F_n\\) is the normal force."
     },
 
     {
-        "header": "Newton's law of universal gravitation",
+        "title": "Newton's law of universal gravitation",
         "formula": "\\[F = G \\cdot \\frac{m_1 \\cdot m_2}{r^2}\\]",
         "body": "Where \\(G\\) is \\(6,674 \\cdot 10^{-11} Nm^2 /kg^2\\), and \\(r\\) is distance between the two masses."
     }
