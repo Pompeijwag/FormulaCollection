@@ -1,6 +1,7 @@
 const formCardTemplate = document.querySelector("[data-form-template]")
 const formCardContainer = document.querySelector("[data-form-cards-container]")
 const searchInput = document.querySelector("[data-search]")
+const formCard = document.getElementsByClassName('card')
 
 let forms = []
 
@@ -9,6 +10,12 @@ searchInput.addEventListener("input", e => {
     forms.forEach(form => {
         const isVisible = form.title.toLowerCase().includes(value) || form.body.toLowerCase().includes(value)
         form.element.classList.toggle("hide", !isVisible)
+    })
+    forms.forEach(form => {
+        if(form.element.classList.contains("pinned")){
+            form.element.classList.remove("hide")
+            
+        }
     })
 })
 
@@ -30,4 +37,16 @@ fetch('./data.json')
         });
         
     })
-     
+
+
+formCardContainer.addEventListener("click", doSomething)
+
+function doSomething(){
+    forms.forEach(form => {
+        const hovered = form.element.matches(':hover')
+        if(hovered){
+            form.element.classList.toggle("pinned")
+        }
+    })
+}
+    
