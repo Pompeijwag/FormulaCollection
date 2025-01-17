@@ -1,12 +1,42 @@
 const formCardTemplate = document.querySelector("[data-form-template]")
 const formCardContainer = document.querySelector("[data-form-cards-container]")
 const searchInput = document.querySelector("[data-search]")
+const searchTagInput = document.querySelector("[data-search-tag]")
 const formCard = document.getElementsByClassName('card')
+const resultBox = document.querySelector("[result-box]")
 
 let forms = []
+let availableTags = ['bruh', 'bitches']
+
+searchTagInput.onkeyup = function(){
+    let result = [];
+    let input = searchTagInput.value;
+    if(input.length) {
+        result = availableTags.filter((keyword)=>{
+            return keyword.toLowerCase().includes(input.toLowerCase());
+        });
+        console.log(result)
+    }
+    display(result);
+
+    if(!result.length){
+        resultBox.innerHTML = '';
+    }
+}
+
+function display(result){
+    const content = result.map((list)=>{
+        return "<li onclick=selectInput(this)>" + list + "</li>";
+    });
+    resultBox.innerHTML = "<ul>" + content.join('') +  "</ul>"
+}
 
 searchInput.addEventListener("input", e => {
-    const value = e.target.value.toLowerCase()
+   update();
+})
+
+function update(){
+    const value = searchInput.value.toLowerCase()
     forms.forEach(form => {
         const isVisible = form.title.toLowerCase().includes(value) || form.body.toLowerCase().includes(value)
         form.element.classList.toggle("hide", !isVisible)
@@ -17,7 +47,7 @@ searchInput.addEventListener("input", e => {
             
         }
     })
-})
+}
 
 fetch('./data.json')
     .then(res => res.json())
@@ -50,3 +80,7 @@ function doSomething(){
     })
 }
     
+function selectInput(list){
+    searchTagInput.value = list.innerHTML;
+    resultBox.innerHTML = '';
+}

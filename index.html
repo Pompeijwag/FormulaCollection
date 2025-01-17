@@ -19,7 +19,11 @@
 <body>
     <div class="search-wrapper">
         <label for="search">Physics and Math Formula Collection</label>
-        <input type="search" id="search" placeholder="Search..." data-search>
+        <input type="search" id="search" placeholder="Search..." autocomplete="off" data-search>
+    </div>
+    <div class="search-wrapper-tag">
+        <input type="search" id="search-tag" placeholder="Search Variables..." autocomplete="off" data-search-tag>
+        <div class="result-box" result-box></div>
     </div>
     <div class="form-cards" data-form-cards-container></div>
     <template data-form-template>
