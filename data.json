@@ -2,42 +2,217 @@
     {
         "title": "Constant Speed formula",
         "formula": "\\(d = vt\\)",
-        "body": "Where \\(d\\) is distance, \\(v\\) is velocity and \\(t\\) is time"
+        "body": "Where \\(d\\) is distance, \\(v\\) is velocity and \\(t\\) is time",
+        "variables": ["Distance", "Velocity", "Time"]
     },
 
     {
         "title": "Pythagorean theorem",
         "formula": "\\[a^2 + b^2 = c^2\\]",
-        "body": "Where \\(c\\) is the hypotenuse."
+        "body": "Where \\(c\\) is the hypotenuse.",
+        "variables": ["Hypotenuse"]
     },
 
     {
         "title": "Constant acceleration (velocity)",
         "formula": "\\[v = v_0 + at\\]",
-        "body": "Where \\(v\\) is the final speed, \\(v_0\\) is the initial speed."
+        "body": "Where \\(v\\) is the final speed, \\(v_0\\) is the initial speed.",
+        "variables": ["Velocity", "Acceleration", "Time"]
     },
 
     {
         "title": "Constant acceleration (displacement)",
         "formula": "\\[s = v_0 t + \\frac{at^2}{2}\\]",
-        "body": "Where \\(v_0\\) is the initial speed."
+        "body": "Where \\(v_0\\) is the initial speed.",
+        "variables": ["Distance", "Acceleration", "Velocity", "Time"]
     },
 
     {
         "title": "Newton's second law",
         "formula": "\\[F = ma\\]",
-        "body": "Where \\(F\\) is force."
+        "body": "Where \\(F\\) is force.",
+        "variables": ["Force", "Mass", "Acceleration"]
     },
 
     {
         "title": "Force of Friction",
         "formula": "\\[F_f = \\mu \\cdot F_n\\]",
-        "body": "Where \\(\\mu\\) is the friction coefficient, \\(F_n\\) is the normal force."
+        "body": "Where \\(\\mu\\) is the friction coefficient, \\(F_n\\) is the normal force.",
+        "variables": ["Force", "Friction coefficient"]
     },
 
     {
         "title": "Newton's law of universal gravitation",
         "formula": "\\[F = G \\cdot \\frac{m_1 \\cdot m_2}{r^2}\\]",
-        "body": "Where \\(G\\) is \\(6,674 \\cdot 10^{-11} Nm^2 /kg^2\\), and \\(r\\) is distance between the two masses."
+        "body": "Where \\(G\\) is \\(6,674 \\cdot 10^{-11} Nm^2 /kg^2\\), and \\(r\\) is distance between the two masses.",
+        "variables": ["Force", "Mass"]
+    },
+
+    {
+        "title": "Work",
+        "formula": "\\[W = F \\cdot s\\]",
+        "body": "Where \\(F\\) is the force in the direction of movement.",
+        "variables": ["Work", "Force", "Distance"]
+    },
+
+    {
+        "title": "Work during acceleration",
+        "formula": "\\[W = \\frac{mv^2}{2} - \\frac{mv_0^2}{2}\\]",
+        "body": "Where \\(W\\) is the work done during acceleration.",
+        "variables": ["Work", "Mass", "Velocity"]
+    },
+
+    {
+        "title": "Potential Energy",
+        "formula": "\\[E_p = m \\cdot g \\cdot h\\]",
+        "body": "Where \\(E_p\\) is the potential energy at height \\(h\\)",
+        "variables": ["Energy", "Mass", "Height"]
+    },
+
+    {
+        "title": "Kinetic Energy",
+        "formula": "\\[E_k = \\frac{mv^2}{2}\\]",
+        "body": "Kinetic energy of object during motion.",
+        "variables": ["Energy", "Mass", "Velocity"]
+    },
+
+    {
+        "title": "Potential Energy of a Spring",
+        "formula": "\\[E_p = \\frac{k \\cdot (\\Delta l)^2}{2}\\]",
+        "body": "Where \\(\\Delta l\\) is the elongation of the spring from natural state, and \\(k\\) the spring constant.",
+        "variables": ["Elongation", "Spring constant", "Energy"]
+    },
+
+    {
+        "title": "Total Energy in a Spring",
+        "formula": "\\[E = \\frac{k \\cdot A^2}{2}\\]",
+        "body": "Where \\(k\\) is the spring constant, and \\(A\\) the amplitude of the spring.",
+        "variables": ["Energy", "Amplitude", "Spring constant"]
+    },
+
+    {
+        "title": "Power",
+        "formula": "\\[P = \\frac{E}{t}\\]",
+        "body": "",
+        "variables": ["Power", "Time", "Energy"]
+    },
+
+    {
+        "title": "Efficiency",
+        "formula": "\\[\\eta = \\frac{W_{in}}{W_{out}}\\]",
+        "body": "Where \\(\\eta\\) is the efficiency.",
+        "variables": ["Efficiency", "Work"]
+    },
+
+    {
+        "title": "Hooke's law",
+        "formula": "\\[F = k \\cdot \\Delta l\\]",
+        "body": "Where \\(\\Delta l\\) is the elongation of the spring, and \\(k\\) the spring constant",
+        "variables": ["Elongation", "Spring constant", "Force"]
+    },
+
+    {
+        "title": "Projectile Motion (Velocity in x)",
+        "formula": "\\[v_x = v_0 \\cdot \\cos a\\]",
+        "body": "Where \\(v_0\\) is the initial velocity, \\(a\\) is the angle relative to the ground.",
+        "variables": ["Velocity", "Angle"]
+    },
+
+    {
+        "title": "Projectile Motion (Velocity in y)",
+        "formula": "\\[v_y = v_0 \\cdot \\sin a - g \\cdot t\\]",
+        "body": "Where \\(v_0\\) is the initial velocity, \\(a\\) is the angle relative to the ground.",
+        "variables": ["Velocity", "Angle", "Time"]
+    },
+
+    {
+        "title": "Projectile Motion (Displacement in x)",
+        "formula": "\\[x = v_x \\cdot t\\]",
+        "body": "Where \\(x\\) is the displacement at time \\(t\\)",
+        "variables": ["Velocity", "Distance"]
+    },
+
+    {
+        "title": "Projectile Motion (Displacement in y)",
+        "formula": "\\[y = v_0 \\cdot \\sin a \\cdot t - \\frac{g \\cdot t^2}{2}\\]",
+        "body": "Where \\(v_0\\) is the initial velocity, \\(a\\) is the angle relative to the ground.",
+        "variables": ["Velocity", "Height", "Time"]
+    },
+
+    {
+        "title": "Maximum Height of a Projectile Motion",
+        "formula": "\\[y_{max} = \\frac{v_0^2 \\cdot \\sin^2 a}{2g}\\]",
+        "body": "",
+        "variables": ["Height", "Velocity", "Angle"]
+    },
+
+    {
+        "title": "Uniform Circular Motion (Angle Velocity)",
+        "formula": "\\[\\omega = \\frac{2 \\pi}{T}\\]",
+        "body": "Where \\(\\omega\\) is the angle velocity, and T is the period time.",
+        "variables": ["Angle velocity", "Period Time"]
+    },
+
+    {
+        "title": "Uniform Circular Motion (Velocity during motion)",
+        "formula": "\\[v = \\omega r\\]",
+        "body": "",
+        "variables": ["Angle velocity", "Velocity", "Radius"]
+    },
+
+    {
+        "title": "Uniform Circular Motion (Centripetal Acceleration)",
+        "formula": "\\[a_c = \\frac{v^2}{r}\\]",
+        "body": "Where \\(a_c\\) is the Centripetal Acceleration.",
+        "variables": ["Velocity", "Acceleration", "Radius"]
+    },
+
+    {
+        "title": "Uniform Circular Motion (Centripetal Force)",
+        "formula": "\\[F_c = \\frac{mv^2}{r}\\]",
+        "body": "Where \\(F_c\\) is the Centripetal Force.",
+        "variables": ["Force", "Mass", "Velocity", "Radius"]
+    },
+
+    {
+        "title": "Momentum",
+        "formula": "\\[p = m \\cdot v\\]",
+        "body": "Where \\(p\\) is the momentum.",
+        "variables": ["Momentum", "Mass", "Velocity"]
+    },
+
+    {
+        "title": "Conservation of momentum",
+        "formula": "\\[m \\cdot v_0 + m' \\cdot v_0' = m \\cdot v + m' \\cdot v'\\]",
+        "body": "Where \\(m\\) and \\(v'\\) is the mass and velocity of the second object.",
+        "variables": ["Mass", "Speed", "Momentum"]
+    },
+
+    {
+        "title": "Elastic Collision Formula",
+        "formula": "\\[v - v' = v_0 - v_0'\\]",
+        "body": "Where \\(v'\\) is the velocity of the second object.",
+        "variables": ["Velocity"]
+    },
+
+    {
+        "title": "Impulse",
+        "formula": "\\[I = F * \\Delta t\\]",
+        "body": "Impulse \\(I\\) is force applied during a certain amount of time.",
+        "variables": ["Impulse", "Force", "Time"]
+    },
+
+    {
+        "title": "Impulse Law of Motion",
+        "formula": "\\[I = m \\cdot v - m \\cdot v_0\\]",
+        "body": "",
+        "variables": ["Impulse", "Mass", "Velocity"]
+    },
+
+    {
+        "title": "",
+        "formula": "\\[\\]",
+        "body": "",
+        "variables": [""]
     }
 ]

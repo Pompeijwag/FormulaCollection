@@ -6,7 +6,7 @@ const formCard = document.getElementsByClassName('card')
 const resultBox = document.querySelector("[result-box]")
 
 let forms = []
-let availableTags = ['bruh', 'bitches']
+let availableTags = []
 
 searchTagInput.onkeyup = function(){
     let result = [];
@@ -62,8 +62,9 @@ fetch('./data.json')
             formula.textContent = form.formula
             body.textContent = form.body
             formCardContainer.append(card)
+            form.variables.forEach(addVariables)
             if (MathJax) MathJax.typesetPromise();
-            return {title: form.title, formula: form.formula, body: form.body, element: card}
+            return {title: form.title, formula: form.formula, body: form.body, variables: form.variables, element: card}
         });
         
     })
@@ -71,6 +72,11 @@ fetch('./data.json')
 
 formCardContainer.addEventListener("click", doSomething)
 
+function addVariables(item){
+    if(!availableTags.includes(item)){
+        availableTags.push(item);
+    }
+}
 function doSomething(){
     forms.forEach(form => {
         const hovered = form.element.matches(':hover')
