@@ -1,5 +1,6 @@
 const formCardTemplate = document.querySelector("[data-form-template]")
 const formCardContainer = document.querySelector("[data-form-cards-container]")
+const formTagsContainer = document.querySelector("[data-form-tags-container]")
 const searchInput = document.querySelector("[data-search]")
 const searchTagInput = document.querySelector("[data-search-tag]")
 const formCard = document.getElementsByClassName('card')
