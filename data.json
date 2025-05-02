@@ -38,7 +38,7 @@
         "title": "Force of Friction",
         "formula": "\\[F_f = \\mu \\cdot F_n\\]",
         "body": "Where \\(\\mu\\) is the friction coefficient, \\(F_n\\) is the normal force.",
-        "variables": ["Force", "Friction coefficient"]
+        "variables": ["Force", "Friction-coefficient"]
     },
 
     {
@@ -80,14 +80,14 @@
         "title": "Potential Energy of a Spring",
         "formula": "\\[E_p = \\frac{k \\cdot (\\Delta l)^2}{2}\\]",
         "body": "Where \\(\\Delta l\\) is the elongation of the spring from natural state, and \\(k\\) the spring constant.",
-        "variables": ["Elongation", "Spring constant", "Energy"]
+        "variables": ["Elongation", "Spring-constant", "Energy"]
     },
 
     {
         "title": "Total Energy in a Spring",
         "formula": "\\[E = \\frac{k \\cdot A^2}{2}\\]",
         "body": "Where \\(k\\) is the spring constant, and \\(A\\) the amplitude of the spring.",
-        "variables": ["Energy", "Amplitude", "Spring constant"]
+        "variables": ["Energy", "Amplitude", "Spring-constant"]
     },
 
     {
@@ -108,7 +108,7 @@
         "title": "Hooke's law",
         "formula": "\\[F = k \\cdot \\Delta l\\]",
         "body": "Where \\(\\Delta l\\) is the elongation of the spring, and \\(k\\) the spring constant",
-        "variables": ["Elongation", "Spring constant", "Force"]
+        "variables": ["Elongation", "Spring-constant", "Force"]
     },
 
     {
@@ -150,14 +150,14 @@
         "title": "Uniform Circular Motion (Angle Velocity)",
         "formula": "\\[\\omega = \\frac{2 \\pi}{T}\\]",
         "body": "Where \\(\\omega\\) is the angle velocity, and T is the period time.",
-        "variables": ["Angle velocity", "Period Time"]
+        "variables": ["Angle-velocity", "Period Time"]
     },
 
     {
         "title": "Uniform Circular Motion (Velocity during motion)",
         "formula": "\\[v = \\omega r\\]",
         "body": "",
-        "variables": ["Angle velocity", "Velocity", "Radius"]
+        "variables": ["Angle-velocity", "Velocity", "Radius"]
     },
 
     {

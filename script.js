@@ -11,10 +11,11 @@ let availableTags = []
 
 searchTagInput.onkeyup = function(){
     let result = [];
-    let input = searchTagInput.value;
+    let input = searchTagInput.value.split(" ");
+    let last = input[input.length - 1]
     if(input.length) {
         result = availableTags.filter((keyword)=>{
-            return keyword.toLowerCase().includes(input.toLowerCase());
+            return keyword.toLowerCase().includes(last.toLowerCase());
         });
         console.log(result)
     }
@@ -36,10 +37,28 @@ searchInput.addEventListener("input", e => {
    update();
 })
 
+searchTagInput.addEventListener("input", e => {
+    if(!searchTagInput.length){
+            update();
+    }
+ })
+
 function update(){
     const value = searchInput.value.toLowerCase()
+    const valuetag = searchTagInput.value
+    let valuetagsArray = []
+    let checktags = false
+    if(valuetag.length > 0){
+        checktags = true
+        valuetagsArray = valuetag.split(" ")
+    }
+    console.log(valuetagsArray)
     forms.forEach(form => {
-        const isVisible = form.title.toLowerCase().includes(value) || form.body.toLowerCase().includes(value)
+        let tagged = true
+        if(checktags) {
+            tagged = form.variables.includes(valuetag)
+        }
+        const isVisible = (form.title.toLowerCase().includes(value) || form.body.toLowerCase().includes(value)) && tagged
         form.element.classList.toggle("hide", !isVisible)
     })
     forms.forEach(form => {
@@ -88,6 +107,14 @@ function doSomething(){
 }
     
 function selectInput(list){
-    searchTagInput.value = list.innerHTML;
+    let lastel = searchTagInput.value;
+    let lastIndex = lastel.lastIndexOf(" ");
+    lastel = lastel.substring(0, lastIndex)
+    if(lastIndex > 0){
+        lastel = lastel.concat(" ")
+    }
+
+    searchTagInput.value = lastel.concat(list.innerHTML);
     resultBox.innerHTML = '';
+    update()
 }
