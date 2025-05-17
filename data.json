@@ -210,9 +210,76 @@
     },
 
     {
+        "title": "Ohm's Law",
+        "formula": "\\[V = RI\\]",
+        "body": "Where V is Voltage, R is Resistance and I is Current.",
+        "variables": ["Voltage", "Current", "Resistance", "EEM076"]
+    },
+    
+    {
+        "title": "Electric Power",
+        "formula": "\\[P = VI = \\frac{V^2}{R} = I^2 R\\]",
+        "body": "",
+        "variables": ["Power", "Voltage", "Resistance", "Current", "EEM076"]
+    },
+    
+
+    {
+        "title": "Equivalent Resistance in Parallel",
+        "formula": "\\[R_{eq} = \\frac{1}{\\frac{1}{R_1} + \\frac{1}{R_2} + \\frac{1}{R_3}}\\]",
+        "body": "Denominator can be expanded for more",
+        "variables": ["Resistance", "EEM076"]
+    },
+
+    {
+        "title": "Current Divider",
+        "formula": "\\[I_X = \\frac{R_T}{R_X + R_T} I_T\\]",
+        "body": "where \\(I_X\\) is the current through resistor, \\(R_X\\) is the resistance of the resistor, \\(R_T\\) the total resistance, and \\(I_T\\) the total current when entering the combined network of resistors.",
+        "variables": ["Current", "Resistance", "EEM076"]
+    },
+
+    {
+        "title": "Voltage Divider",
+        "formula": "\\[V_X = V_{total} \\frac{R_X}{R_{total}}\\]",
+        "body": "",
+        "variables": ["Resistance", "Voltage", "EEM076"]
+    },
+
+    {
+        "title": "Coulumb's Law",
+        "formula": "\\[F = k \\frac{q_1q_2}{r^2}\\]",
+        "body": "Where k is the Coulomb constant, or \\(\\frac{1}{4\\pi \\epsilon_0}\\), or \\(8.99 \\cdot 10^9 Nm^2/C^2\\)",
+        "variables": ["Charge", "Force", "Coulomb Constant", "Distance", "EEM076"]
+    },
+
+    {
+        "title": "Gauss Law",
+        "formula": "\\[\\]",
+        "body": "",
+        "variables": []
+    },
+
+    {
+        "title": "Impedance",
+        "formula": "\\[Z_R = R \\quad Z_L = j\\omega L \\quad Z_C = 1/j\\omega C \\quad V = IZ\\]",
+        "body": "Where \\(Z_R\\) is for Resistor, \\(Z_L\\) for Inductors, and \\(Z_C\\) for Capacitors. \\(L\\) is Inductance in Henry, and \\(C\\) is Capacitance in Fahrad. \\(\\omega\\) is the angular frequency",
+        "variables": ["Resistance", "Impedance", "Inductance", "Capacitance", "Voltage", "Current", "EEM076", "Angular Frequency"]
+    },
+
+    {
+        "title": "RMS or Effective values in AC",
+        "formula": "\\[V_{rms} = \\frac{V_{max}}{\\sqrt{2}} \\quad I_{rms} = \\frac{I_{max}}{\\sqrt{2}}\\]",
+        "body": "",
+        "variables": ["Voltage", "Current", "EEM076"]
+    },
+
+    {
         "title": "",
         "formula": "\\[\\]",
         "body": "",
-        "variables": [""]
+        "variables": []
     }
+
+
+
 ]
