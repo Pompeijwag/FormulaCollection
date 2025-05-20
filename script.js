@@ -56,7 +56,7 @@ function update(){
     forms.forEach(form => {
         let tagged = true
         if(checktags) {
-            tagged = form.variables.includes(valuetag)
+            valuetagsArray.forEach((element) => tagged = tagged & form.variables.includes(element));
         }
         const isVisible = (form.title.toLowerCase().includes(value) || form.body.toLowerCase().includes(value)) && tagged
         form.element.classList.toggle("hide", !isVisible)
