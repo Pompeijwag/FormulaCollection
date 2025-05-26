@@ -234,7 +234,7 @@
     {
         "title": "Current Divider",
         "formula": "\\[I_X = \\frac{R_T}{R_X + R_T} I_T\\]",
-        "body": "where \\(I_X\\) is the current through resistor, \\(R_X\\) is the resistance of the resistor, \\(R_T\\) the total resistance, and \\(I_T\\) the total current when entering the combined network of resistors.",
+        "body": "where \\(I_X\\) is the current through resistor, \\(R_X\\) is the resistance of the resistor, \\(R_T\\) the other resistance, and \\(I_T\\) the total current when entering the combined network of resistors.",
         "variables": ["Current", "Resistance", "EEM076"]
     },
 
@@ -254,9 +254,9 @@
 
     {
         "title": "Gauss Law",
-        "formula": "\\[\\]",
-        "body": "",
-        "variables": []
+        "formula": "\\[\\Phi_E = \\oint_S \\vec{E} \\cdot d\\vec{A} = E \\oint_S dA = \\frac{Q_{\\text{inside}}}{\\varepsilon_0}\\]",
+        "body": "Where \\(dA\\) is the gaussian surface enclosing the sphere. \\(k = \\frac{1}{4\\pi\\epsilon_0}\\)",
+        "variables": ["Charge", "EEM076"]
     },
 
     {
@@ -271,6 +271,13 @@
         "formula": "\\[V_{rms} = \\frac{V_{max}}{\\sqrt{2}} \\quad I_{rms} = \\frac{I_{max}}{\\sqrt{2}}\\]",
         "body": "",
         "variables": ["Voltage", "Current", "EEM076"]
+    },
+
+    {
+        "title": "Power in AC Circuits",
+        "formula": "\\[P = V_{rms}I_{rms}cos\\theta\\] \\[R = V_{rms}I_{rms}sin\\theta\\] \\[S = P + jQ\\] \\[|S| = V_{rms}I_{rms}\\] ",
+        "body": "Where \\(P\\) is the real power, \\(R\\) is the reactive power, \\(S\\) is the complex power, \\(|S|\\) is the apprent power and \\(\\theta\\) is the angle between Voltage and Current.",
+        "variables": ["EEM076", "Voltage", "Current", "Angular Frequency", "Power"]
     },
 
     {
