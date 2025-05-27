@@ -249,7 +249,7 @@
         "title": "Coulumb's Law",
         "formula": "\\[F = k \\frac{q_1 q_2}{r^2}\\]",
         "body": "Where k is the Coulomb constant, or \\(\\frac{1}{4\\pi \\epsilon_0}\\), or \\(8.99 \\cdot 10^9 Nm^2/C^2\\)",
-        "variables": ["Charge", "Force", "Coulomb Constant", "Distance", "EEM076"]
+        "variables": ["Charge", "Force", "Coulomb-Constant", "Distance", "EEM076"]
     },
 
     {
@@ -263,7 +263,7 @@
         "title": "Impedance",
         "formula": "\\[Z_R = R \\quad Z_L = j\\omega L \\quad Z_C = 1/j\\omega C \\quad V = IZ\\]",
         "body": "Where \\(Z_R\\) is for Resistor, \\(Z_L\\) for Inductors, and \\(Z_C\\) for Capacitors. \\(L\\) is Inductance in Henry, and \\(C\\) is Capacitance in Fahrad. \\(\\omega\\) is the angular frequency",
-        "variables": ["Resistance", "Impedance", "Inductance", "Capacitance", "Voltage", "Current", "EEM076", "Angular Frequency"]
+        "variables": ["Resistance", "Impedance", "Inductance", "Capacitance", "Voltage", "Current", "EEM076", "Angular-Frequency"]
     },
 
     {
@@ -277,7 +277,29 @@
         "title": "Power in AC Circuits",
         "formula": "\\[P = V_{rms}I_{rms}cos\\theta\\] \\[R = V_{rms}I_{rms}sin\\theta\\] \\[S = P + jQ\\] \\[|S| = V_{rms}I_{rms}\\] ",
         "body": "Where \\(P\\) is the real power, \\(R\\) is the reactive power, \\(S\\) is the complex power, \\(|S|\\) is the apprent power and \\(\\theta\\) is the angle between Voltage and Current.",
-        "variables": ["EEM076", "Voltage", "Current", "Angular Frequency", "Power"]
+        "variables": ["EEM076", "Voltage", "Current", "Angular-Frequency", "Power"]
+    },
+    
+
+    {
+        "title": "Resonance Frequency and Cut-off Frequency",
+        "formula": "\\[f_0 = \\frac{1}{2\\pi\\sqrt{LC}} \\quad  f_c = \\frac{1}{2\\pi\\sqrt{RC}}\\]",
+        "body": "",
+        "variables": ["EEM076", "Capacitance", "Inductance", "Frequency"]
+    },
+
+    {
+        "title": "Quality Factor",
+        "formula": "\\[Q_S = \\frac{2\\pi f_0 L}{R} = \\frac{1}{2\\pi f_0 C R}\\]",
+        "body": "",
+        "variables": ["Resistance", "EEM076", "Inductance", "Capacitance", "Frequency", "Quality-Factor"]
+    },
+
+    {
+        "title": "Bandwidth",
+        "formula": "\\[\\frac{f_0}{Q_S} = f_H - f_L\\]",
+        "body": "",
+        "variables": ["Frequency", "Quality-Factor", "EEM076"]
     },
 
     {
